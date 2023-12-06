@@ -29,3 +29,10 @@ console.log(days)
 days.push("Wednesday")
 console.log(days)
 
+//2. pop - removes last index element from an array 
+let capital = ["kathmandu","New Delhi", "Bejing", "Dhaka"]
+console.log(capital)
+days.pop()
+console.log(capital)
+days.pop()
+console.log(capital)
