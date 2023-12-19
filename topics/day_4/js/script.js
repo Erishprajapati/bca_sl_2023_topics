@@ -1,54 +1,57 @@
-//defining arrays
-let places = ["Kathmandu", "Lalitpur", "Pokhara", "Butwal"];
-const gender = ["Male", "Female", "Others"];
-let lakes = ["Phewa", "Begnas", "Rara", "Tilicho"];
+// defining array
+let places = ["Kathmandu", "Lalitpur", "Pokhara", "Butwal"]
+const gender = ["Male", "Female", "Others"]
 
-//accessing array elements with indexing
-console.log(places[0]);
-console.log(places[1]);
-console.log(places[3]);
+// accessing array elements with indexing
+console.log(places[0])
+console.log(places[1])
+console.log(places[3])
 
-//array properties and methods - properties
-console.log(places.length);
-console.log(gender.length);
-console.log(lakes.length);
+// since array is an object so we can define it using array()
+let lakes = new Array("Phewa", "Begnas", "Rara", "Tilicho")
 
-//methods
-let days = ["Sunday", "Monday"];
-console.log(days);
-days.push("Tuesday");
-console.log(days);
-days.push("Wednesday");
-console.log(days);
+// array properties and methods
+// properties
 
-let capital = ["Kathmandu", "New Delhi", "Beijing", "Dhaka"];
-console.log(capital);
-capital.pop();
-console.log(capital);
-capital.pop();
-console.log(capital);
+// length - return the length of an array
+// example
+console.log(places.length)
+console.log(gender.length)
+console.log(lakes.length)
 
-let movies = ["Animal", "Marvel", "Dimag Kharab", "Batman"];
-console.log(movies);
-movies.shift();
-console.log(movies);
-movies.shift();
-console.log(movies);
+// methods
+// 1. push - append an element in an array
+// example
+let days = ["Sunday", "Monday"]
+console.log("Push Example")
+console.log(days)
+days.push("Friday")
+console.log(days)
+days.push("Wednesday")
+console.log(days)
 
-let kings = ["Mahendra", "Birendra", "Gyanendra"];
-console.log(kings);
-kings.shift();
-console.log(kings);
-kings.shift();
-console.log(kings);
+// 2. pop - removes last index element from an array
+let capital = ["Kathmandu", "New Delhi", "Beijing", "Dhaka"]
+console.log("Pop example")
+console.log(capital)
+capital.pop()
+console.log(capital)
+capital.pop()
+console.log(capital)
 
-let languages = ["Java", "JavaScript", "Php"];
-console.log(languages);
-languages.splice(1, 0, "Python");
-console.log(languages);
-languages.splice(1, 2, "Dart");
-console.log(languages);
-languages.splice(3, 0, "Go Lang");
-console.log(languages);
-languages.splice(2, 1, "Ruby");
-console.log(languages);
+// 3. shift() - removes element of first index
+let movies = ["Animal", "The Marvels", "Dimag Kharab", "Batman"]
+console.log("Shift Example")
+console.log(movies)
+movies.shift()
+console.log(movies)
+movies.shift()
+console.log(movies)
+
+// 4. unshift() - add an element at the beginning of the array
+let kings = ["Mahendra", "Birendra", "Gyanendra"]
+console.log("Unshift Example")
+kings.unshift("Prithvi")
+console.log(kings)
+kings.unshift("Gehendra")
+console.log(kings)
