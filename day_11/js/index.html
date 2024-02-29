@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Event listener</title>
+<style>
+    /* Reset some default styles */
+body, h1, h2, p, label, input {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Style the form container */
+form {
+    width: 300px;
+    margin: 50px auto;
+}
+
+/* Style form labels */
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+/* Style form inputs */
+input {
+    width: 100%;
+    padding: 5px;
+    margin: 5px 0;
+    box-sizing: border-box;
+}
+
+/* Style submit button */
+#btnReg {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#btnReg:hover {
+    background-color: #45a049;
+}
+
+</style>
+
+</head>
+<body>
+    <h2>JS Event and Eventlistener</h2>
+    <!--html form-->
+    <form method ="#">
+        <div>
+            <label for="first_name">First Name</label>
+            <br>
+            <input type="text" id="first_name"/>
+            <br>
+            <label for="last_name">Last Name</label>
+            <br>
+            <input type="text" id="last_name"/>
+            <br>
+            <label for="username">Username</label>
+            <br>
+            <input type="text" id="username"/>
+            <br>
+            <label for="password">Password</label>
+            <br>
+            <input type="text" id="password"/>
+            <br>
+            <input type="submit" value="Register"  id ="btnReg"/>
+        
+        </div>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
